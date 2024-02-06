@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		111D149A2B5EF898007677BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D14992B5EF898007677BA /* AppDelegate.swift */; };
 		111D149C2B5EF898007677BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D149B2B5EF898007677BA /* SceneDelegate.swift */; };
-		111D149E2B5EF898007677BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D149D2B5EF898007677BA /* ViewController.swift */; };
+		111D149E2B5EF898007677BA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D149D2B5EF898007677BA /* SecondViewController.swift */; };
 		111D14A12B5EF898007677BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111D149F2B5EF898007677BA /* Main.storyboard */; };
 		111D14A32B5EF89A007677BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111D14A22B5EF89A007677BA /* Assets.xcassets */; };
 		111D14A62B5EF89A007677BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111D14A42B5EF89A007677BA /* LaunchScreen.storyboard */; };
+		11E9AA062B71860000ABAFCE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9AA052B71860000ABAFCE /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		111D14962B5EF898007677BA /* ColorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		111D14992B5EF898007677BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		111D149B2B5EF898007677BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		111D149D2B5EF898007677BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		111D149D2B5EF898007677BA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		111D14A02B5EF898007677BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		111D14A22B5EF89A007677BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		111D14A52B5EF89A007677BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		111D14A72B5EF89A007677BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E9AA052B71860000ABAFCE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		111D14982B5EF898007677BA /* ColorApp */ = {
 			isa = PBXGroup;
 			children = (
-				111D14992B5EF898007677BA /* AppDelegate.swift */,
-				111D149B2B5EF898007677BA /* SceneDelegate.swift */,
-				111D149D2B5EF898007677BA /* ViewController.swift */,
-				111D149F2B5EF898007677BA /* Main.storyboard */,
-				111D14A22B5EF89A007677BA /* Assets.xcassets */,
-				111D14A42B5EF89A007677BA /* LaunchScreen.storyboard */,
-				111D14A72B5EF89A007677BA /* Info.plist */,
+				11E9AA032B71854300ABAFCE /* SupportingFiles */,
+				11E9AA012B71851200ABAFCE /* ViewControllers */,
+				11E9AA022B71853200ABAFCE /* Storyboards */,
+				11E9AA042B71855600ABAFCE /* Resources */,
 			);
 			path = ColorApp;
+			sourceTree = "<group>";
+		};
+		11E9AA012B71851200ABAFCE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				11E9AA052B71860000ABAFCE /* FirstViewController.swift */,
+				111D149D2B5EF898007677BA /* SecondViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		11E9AA022B71853200ABAFCE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				111D149F2B5EF898007677BA /* Main.storyboard */,
+				111D14A42B5EF89A007677BA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		11E9AA032B71854300ABAFCE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				111D14992B5EF898007677BA /* AppDelegate.swift */,
+				111D149B2B5EF898007677BA /* SceneDelegate.swift */,
+				111D14A72B5EF89A007677BA /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		11E9AA042B71855600ABAFCE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				111D14A22B5EF89A007677BA /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				111D149E2B5EF898007677BA /* ViewController.swift in Sources */,
+				111D149E2B5EF898007677BA /* SecondViewController.swift in Sources */,
 				111D149A2B5EF898007677BA /* AppDelegate.swift in Sources */,
 				111D149C2B5EF898007677BA /* SceneDelegate.swift in Sources */,
+				11E9AA062B71860000ABAFCE /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +325,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XYDNW9XVU2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorApp/Info.plist;
+				INFOPLIST_FILE = ColorApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,9 +338,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fun.swiftpractice.ColorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +356,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XYDNW9XVU2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorApp/Info.plist;
+				INFOPLIST_FILE = ColorApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,9 +369,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fun.swiftpractice.ColorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
